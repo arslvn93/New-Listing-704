@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-11-06T04:14:03.842Z
+ * Last updated: 2025-11-06T15:51:45.296Z
  */
 
 // contactInfo configuration
@@ -117,17 +117,7 @@ export const galleryImages = [
   }
 ];
 
-// heroVideo configuration
-// export const heroVideo = {
-//   url: "",
-//   type: "video/mp4",
-//   autoplay: true,
-//   loop: true,
-//   muted: true,
-//   playsInline: true
-// };
-
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -157,15 +147,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "La Porte",
+  name: "Beach Park",
   city: "La Porte",
-  description: "La Porte's premier destination for culture, dining, and urban living.",
+  description: "Beach Park in La Porte combines coastal recreation and small‑town historic character — perfect for residents who want easy access to waterfront parks and a walkable Main Street. The area highlights local history and outdoor life, from Sylvan Beach Park and its pier to the San Jacinto Battleground and museum nearby.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "San Jacinto Battleground State Historic Site featuring the San Jacinto Monument and museum",
+    "Historic Main Street La Porte with art shops, antique stores, restaurants and year‑round festivals",
+    "Sylvan Beach Park — waterside park with a scenic pier and recreational activities",
+    "Old Sylvan Beach Depot Museum & Library showcasing La Porte’s history",
+    "Easy access to local parks, waterfront trails and community events"
   ]
 };
 
@@ -173,45 +163,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Historic Main Street La Porte",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Sylvan Beach Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "Old Sylvan Beach Depot Museum & Library",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "Ed's Bistro",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Barrell House Lebanon Ohio",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "San Jacinto At Park (bus stop)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "San Jacinto Battleground State Historic Site",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Main Street La Porte Business District",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -220,34 +224,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "60/100",
+    caption: "Somewhat Walkable",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "55/100",
+    caption: "Some Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
-    color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
+    title: "Bike Score",
+    value: "45/100",
+    caption: "Somewhat Bikeable",
+    iconName: "Compass",
+    color: "bg-blue-500"
   }
 ];
 
@@ -267,7 +263,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "La Porte ISD, New Football Stadium",
     iconName: "GraduationCap"
   },
@@ -301,7 +297,12 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Saturday, November 8, 2025","time":"2:00 PM - 4:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Saturday, November 8, 2025",
+      time: "2:00 PM - 4:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -320,7 +321,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "La Porte ISD, New Football Stadium",
     iconName: "GraduationCap"
   },
@@ -364,7 +365,7 @@ export const property = {
   status: "For Sale",
   description: "The View",
   shortDescription: "3 BEDS + 3 BATHS in La Porte",
-longDescription: "Beach View, Open Concept, Fully Furnished",
+  longDescription: "Beach View, Open Concept, Fully Furnished",
   mainFeatures: [],
   propertyType: "Townhouse",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1762402234459-4167f777a199a05be6da96bed5aca394l-m425327318rd-w1280_h960.webp",
@@ -384,7 +385,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -412,7 +413,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Yvonne Quintero provided exceptional service and found us exactly what we were looking for in La Porte.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -425,9 +426,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Yvonne Quintero knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
